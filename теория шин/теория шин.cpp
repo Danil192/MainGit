@@ -27,15 +27,13 @@ int menu() {
 
 Функция предназначена для вычисления жизни шины
 
-\param ..
+\param shina - кол-во шин, iznos - износ шины, km - расстояние, week - неделя
 
-\retirn ..
+\retirn result_live_shina - вернули результат формулы (жизнь шин)
 */
 
 int calculation_live_shinas(int shina, double iznos, int km, int week)
 {
-
-
     if (km >= 2000)
     {
         week = floor(km / 2000); //округление в менюшую сторону 
